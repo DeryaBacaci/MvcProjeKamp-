@@ -15,6 +15,8 @@ namespace DataAccessLayer.Concrete
 
         void Update(T p);
 
+        T Get(Expression<Func<T, bool>> filter);
+
         void Delete(T p);
 
         List<T> Listele(Expression<Func<T, bool>> filter);
