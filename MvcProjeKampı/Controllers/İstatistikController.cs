@@ -18,6 +18,7 @@ namespace MvcProjeKampı.Controllers
         // GET: İstatistik
         public ActionResult Ödev2()
         {
+
             var toplamkategori = cm.GetList().Count();
             ViewBag.ToplamKategori = toplamkategori;
 
